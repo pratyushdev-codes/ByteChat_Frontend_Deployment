@@ -1,0 +1,148 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap");
+
+
+
+
+
+
+
+.navbar {
+  height: 60px;
+  width: 28vw;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #202020;
+  z-index: 2;
+}
+
+.navbar .logo {
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: #090909;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 4em;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  padding: 0.25em 1em;
+  color: #090909;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+.navbar a:hover {
+  color: #777;
+  transition-duration: 0.3s;
+}
+
+
+.chatInput {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0; /* Optionally remove left padding */
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: white;
+  outline: none;
+  border: none;
+}
+
+/* Rest of the CSS with scoped classes */
+.header,
+.chatList .message,
+.typingForm {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.header {
+  margin-top: 6vh;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: linear-gradient(to right, #4285f4,#d96570, #d96570, #d96570);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 2.6rem;
+  color: var(--subheading-color);
+}
+
+/* Suggestion List Styling */
+.suggestionList {
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.suggestion {
+  padding: 1.25rem;
+  background: var(--secondary-color);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* Additional styles for responsive media queries */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .typingArea {
+    gap: 0.4rem;
+  }
+}
+
